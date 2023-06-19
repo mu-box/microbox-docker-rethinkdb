@@ -42,8 +42,8 @@ Vagrant.configure(2) do |config|
   config.vm.provision "shell", inline: <<-SCRIPT
     echo "Building docker image..."
     cd /vagrant
-    docker build -t nanobox/rethinkdb:2.3 --no-cache=true 2.3
-    docker tag nanobox/rethinkdb:2.3 nanobox/rethinkdb:2.3
+    docker build -t mubox/rethinkdb:2.3 --no-cache=true 2.3
+    docker tag mubox/rethinkdb:2.3 mubox/rethinkdb:2.3
   SCRIPT
 
 end
